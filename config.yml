@@ -1,0 +1,16 @@
+title: Teste coursera
+description: teste do curso
+template:
+  repo: teste-coursera-template
+  name: teste-coursera
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
